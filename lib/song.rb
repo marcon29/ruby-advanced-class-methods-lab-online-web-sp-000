@@ -15,9 +15,8 @@ class Song
   end
 
   def self.new_by_name(name)
-    binding.pry
-    song = self.create
-    song.name = name
+    self.create.name = name
+    self.all.last
   end
 
 
