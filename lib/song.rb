@@ -7,17 +7,7 @@ class Song
   end
 
   def save
-    self.class.all << self
-  end
-
-  def self.create
-    self.new.save.last
-  end
-
-  def self.new_by_name(name)
-    song = self.create
-
-
+    self.class.all << self  # self is instance - adds instance to @@all
   end
 
 end
