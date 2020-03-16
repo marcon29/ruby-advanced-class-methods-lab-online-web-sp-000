@@ -15,13 +15,14 @@ class Song
   end
 
   def self.new_by_name(name)
+    binding.pry
     self.create.name = name
     self.all.last
   end
 
-  def self.create_by_name(name)
-    self.create.name = name
-    self.all.last
-  end
+#  def self.create_by_name(name)
+#    self.create.name = name
+#    self.all.last
+#  end
 
 end
