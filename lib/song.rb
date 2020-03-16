@@ -19,5 +19,9 @@ class Song
     self.all.last
   end
 
+  def self.create_by_name(name)
+    self.create.name = name
+    self.all.last
+  end
 
 end
