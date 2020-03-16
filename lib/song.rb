@@ -10,4 +10,8 @@ class Song
     self.class.all << self  # self is instance - adds instance to @@all
   end
 
+  def self.create
+    binding.pry
+  end
+
 end
